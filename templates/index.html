@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Простое Flask приложение</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { background: #f0f0f0; padding: 20px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>{{ message }}</h1>
+        <p>Текущее окружение: <strong>{{ environment }}</strong></p>
+    </div>
+    
+    <h2>Навигация</h2>
+    <ul>
+        <li><a href="/">Главная</a></li>
+        <li><a href="/about">О проекте</a></li>
+        <li><a href="/api/status">Статус API</a></li>
+    </ul>
+    
+    <p>Это простое приложение для тестирования деплоя на Railway.</p>
+</body>
+</html>
