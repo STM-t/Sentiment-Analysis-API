@@ -3,7 +3,11 @@ import os
 
 app = Flask(__name__)
 
-
+@app.route('/')
+def home():
+    return render_template('index.html', 
+                         message='Привет от Flask на Railway!',
+                         environment=os.environ.get('ENVIRONMENT', 'development')
 
 @app.route('/about')
 def about():
@@ -19,5 +23,6 @@ def status():
     }
 
 if __name__ == '__main__':
+
 
 
